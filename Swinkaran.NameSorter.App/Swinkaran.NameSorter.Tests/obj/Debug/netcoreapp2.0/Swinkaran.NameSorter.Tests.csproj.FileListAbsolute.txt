@@ -1,6 +1,0 @@
-C:\Users\Broswebs-Desk\Documents\GitHub\NameSorter-App\Swinkaran.NameSorter.App\Swinkaran.NameSorter.Tests\bin\Debug\netcoreapp2.0\Swinkaran.NameSorter.Tests.deps.json
-C:\Users\Broswebs-Desk\Documents\GitHub\NameSorter-App\Swinkaran.NameSorter.App\Swinkaran.NameSorter.Tests\bin\Debug\netcoreapp2.0\Swinkaran.NameSorter.Tests.dll
-C:\Users\Broswebs-Desk\Documents\GitHub\NameSorter-App\Swinkaran.NameSorter.App\Swinkaran.NameSorter.Tests\obj\Debug\netcoreapp2.0\Swinkaran.NameSorter.Tests.csprojAssemblyReference.cache
-C:\Users\Broswebs-Desk\Documents\GitHub\NameSorter-App\Swinkaran.NameSorter.App\Swinkaran.NameSorter.Tests\obj\Debug\netcoreapp2.0\Swinkaran.NameSorter.Tests.csproj.CoreCompileInputs.cache
-C:\Users\Broswebs-Desk\Documents\GitHub\NameSorter-App\Swinkaran.NameSorter.App\Swinkaran.NameSorter.Tests\obj\Debug\netcoreapp2.0\Swinkaran.NameSorter.Tests.AssemblyInfoInputs.cache
-C:\Users\Broswebs-Desk\Documents\GitHub\NameSorter-App\Swinkaran.NameSorter.App\Swinkaran.NameSorter.Tests\obj\Debug\netcoreapp2.0\Swinkaran.NameSorter.Tests.AssemblyInfo.cs

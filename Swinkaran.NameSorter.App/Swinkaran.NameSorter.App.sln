@@ -6,6 +6,9 @@ MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Swinkaran.NameSorter.ConsoleUI", "Swinkaran.NameSorter.ConsoleUI\Swinkaran.NameSorter.ConsoleUI.csproj", "{08FE78A7-798B-451F-92A4-B7F2B2BF4CA6}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Swinkaran.NameSorter.Tests", "Swinkaran.NameSorter.Tests\Swinkaran.NameSorter.Tests.csproj", "{71B8A37F-188E-4705-9583-513C523CDB6E}"
+	ProjectSection(ProjectDependencies) = postProject
+		{08FE78A7-798B-451F-92A4-B7F2B2BF4CA6} = {08FE78A7-798B-451F-92A4-B7F2B2BF4CA6}
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
