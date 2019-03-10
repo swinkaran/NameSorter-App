@@ -1,2 +1,5 @@
 
 *.cache
+*.dll
+Swinkaran.NameSorter.App/Swinkaran.NameSorter.ConsoleUI/obj/publish/win-x86/Swinkaran.NameSorter.ConsoleUI.csproj.nuget.g.targets
+Swinkaran.NameSorter.App/Swinkaran.NameSorter.ConsoleUI/obj/*
