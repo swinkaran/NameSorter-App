@@ -12,7 +12,7 @@ namespace NameSorter.ConsoleUI.Model
         public string LastName { get; private set; }
         
         [Required]
-        public string[] GivenNames { get; private set; }
+        public string GivenName { get; private set; }
 
         public Person() { }
 
@@ -23,13 +23,10 @@ namespace NameSorter.ConsoleUI.Model
         /// <param name="_lastName"></param>
         public Person(string[] _givenNames, string _lastName)
         {
-            //set given names
+            //set last name
             LastName = _lastName;
-            GivenNames = _givenNames;
             //set given names
-            //string[] NameSplits = _givenName.Trim().Split(' ', StringSplitOptions.None);
-
-            //Array.Copy(NameSplits, GivenNames, NameSplits.Length <= 3 ? NameSplits.Length : 3);
+            GivenName = string.Join(" ", _givenNames);
         }
     }
 }

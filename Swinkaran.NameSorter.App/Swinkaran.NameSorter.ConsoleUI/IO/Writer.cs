@@ -36,7 +36,7 @@ namespace NameSorter.ConsoleUI.Output
             Console.WriteLine("Sorted list displayed on screen");
             foreach (Person p in base.People)
             {
-                Helper.WriteToConsole(string.Join(" ", p.GivenNames) + " " + p.LastName);
+                Helper.WriteToConsole(p.GivenName + " " + p.LastName);
             }
         }
     }
@@ -53,9 +53,9 @@ namespace NameSorter.ConsoleUI.Output
         public override void display()
         {
             ///declare an array of strings, each array element(cincatination of given names and lastname) being a file line
-            string[] fileLines = base.People.Select(s => string.Join(" ", s.GivenNames) + " " + s.LastName).ToArray();
+            string[] fileLines = base.People.Select(s => s.GivenName + " " + s.LastName).ToArray();
 
-            File.WriteAllLines("filename.txt", fileLines);
+            File.WriteAllLines("sorted-names-list.txt", fileLines);
 
             Console.WriteLine("Sorted list saved to the local folder");
         }

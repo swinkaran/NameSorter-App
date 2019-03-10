@@ -26,12 +26,12 @@ namespace NameSorter.ConsoleUI.Model
                 string[] NameSplits = name.Trim().Split(' ', StringSplitOptions.None);
                 int NamePartsCount = NameSplits.Length;
 
-                string[] GivenNames = new string[3];
+                string[] GivenNames = new string[(NamePartsCount - 1) <= 3 ? (NamePartsCount - 1) : 3];
                 string LastName = NameSplits[NameSplits.Length - 1];
 
-                Array.Copy(NameSplits, GivenNames, 1);
-                
-                People.Add(new Person(GivenNames,LastName));
+                Array.Copy(NameSplits, GivenNames, NamePartsCount - 1);
+
+                People.Add(new Person(GivenNames, LastName));
             }
 
             return People;

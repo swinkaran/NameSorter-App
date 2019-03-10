@@ -30,8 +30,9 @@ namespace Swinkaran.NameSorter.Features.Sorting
         /// <returns></returns>
         public IList<Person> SortByName()
         {
-            //IList<Person> SortedPersonsList = PersonsList.OrderBy(p => p.LastName).ThenBy(p => p.GivenNames).Distinct().ToList();
-            IList<Person> SortedPersonsList = PersonsList;
+            IList<Person> SortedPersonsList = PersonsList.OrderBy(p=> p.LastName)
+                .ThenBy(p => p.GivenName)
+                .ToList();
             return SortedPersonsList;
         }
     }

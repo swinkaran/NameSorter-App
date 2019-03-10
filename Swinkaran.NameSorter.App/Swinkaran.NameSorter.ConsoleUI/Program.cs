@@ -37,10 +37,6 @@ namespace Swinkaran.NameSorter.ConsoleUI
             PersonList personList = new PersonList(reader);
 
             IList<Person> persons = personList.ReadAllPeople();
-            //foreach (string name in Names)
-            //{
-            //    personsList.Add(new Person(name);
-            //}
             #endregion
 
             #region Sorting
