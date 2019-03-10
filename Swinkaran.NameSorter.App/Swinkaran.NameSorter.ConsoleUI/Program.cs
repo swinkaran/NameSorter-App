@@ -10,7 +10,7 @@ namespace Swinkaran.NameSorter.ConsoleUI
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            Console.WriteLine("NAME SORTING APPLICATION");
 
             // To check the length of  
             // Command line arguments   
@@ -20,7 +20,7 @@ namespace Swinkaran.NameSorter.ConsoleUI
             }
             else
             {
-                Helper.WriteToConsole("File not specified");
+                Helper.WriteToConsole("File not specified! Missing an argument");
             }
         }
 

@@ -1,8 +1,6 @@
-﻿using System;
+﻿using NameSorter.ConsoleUI.Input;
+using System;
 using System.Collections.Generic;
-using System.Text;
-using NameSorter.ConsoleUI.Output;
-using NameSorter.ConsoleUI.Input;
 
 namespace NameSorter.ConsoleUI.Model
 {
@@ -24,12 +22,11 @@ namespace NameSorter.ConsoleUI.Model
             foreach (string name in Names)
             {
                 string[] NameSplits = name.Trim().Split(' ', StringSplitOptions.None);
-                int NamePartsCount = NameSplits.Length;
-
-                string[] GivenNames = new string[(NamePartsCount - 1) <= 3 ? (NamePartsCount - 1) : 3];
+                
+                string[] GivenNames = new string[(NameSplits.Length - 1) <= 3 ? (NameSplits.Length - 1) : 3];
                 string LastName = NameSplits[NameSplits.Length - 1];
 
-                Array.Copy(NameSplits, GivenNames, NamePartsCount - 1);
+                Array.Copy(NameSplits, GivenNames, NameSplits.Length - 1);
 
                 People.Add(new Person(GivenNames, LastName));
             }

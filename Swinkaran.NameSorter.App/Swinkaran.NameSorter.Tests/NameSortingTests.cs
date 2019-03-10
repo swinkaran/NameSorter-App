@@ -1,9 +1,7 @@
-﻿using System;
-using System.Linq;
-using System.Collections.Generic;
-using NUnit;
+﻿using NameSorter.ConsoleUI.Model;
 using NUnit.Framework;
-using NameSorter.ConsoleUI.Model;
+using System.Collections.Generic;
+using System.Linq;
 
 namespace Swinkaran.NameSorter.Tests
 {

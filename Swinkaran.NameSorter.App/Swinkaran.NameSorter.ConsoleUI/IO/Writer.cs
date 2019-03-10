@@ -1,11 +1,9 @@
-﻿using System;
-using System.Linq;
-using System.Collections;
-using System.Collections.Generic;
-using System.Text;
-using NameSorter.ConsoleUI.Model;
-using System.IO;
+﻿using NameSorter.ConsoleUI.Model;
 using Swinkaran.NameSorter.ConsoleUI;
+using System;
+using System.Collections.Generic;
+using System.IO;
+using System.Linq;
 
 namespace NameSorter.ConsoleUI.Output
 {
@@ -21,15 +19,10 @@ namespace NameSorter.ConsoleUI.Output
 
     public class ScreenWriter : Writer
     {
-        //public readonly IList<Model.Person> AllPeople;
-
-        public ScreenWriter(IList<Person> _people) : base(_people)
-        {
-            //AllPeople = base.People;
-        }
+        public ScreenWriter(IList<Person> _people) : base(_people) { }
 
         /// <summary>
-        /// 
+        /// Dislay the sorted list on console
         /// </summary>
         public override void display()
         {
@@ -48,18 +41,15 @@ namespace NameSorter.ConsoleUI.Output
         }
 
         /// <summary>
-        /// 
+        /// Save the output to the file
         /// </summary>
         public override void display()
         {
             ///declare an array of strings, each array element(cincatination of given names and lastname) being a file line
             string[] fileLines = base.People.Select(s => s.GivenName + " " + s.LastName).ToArray();
-
             File.WriteAllLines("sorted-names-list.txt", fileLines);
 
             Console.WriteLine("Sorted list saved to the local folder");
         }
-
     }
-
 }

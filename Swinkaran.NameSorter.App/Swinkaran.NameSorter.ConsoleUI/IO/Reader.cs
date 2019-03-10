@@ -1,7 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.IO;
-using System.Text;
 
 namespace NameSorter.ConsoleUI.Input
 {
@@ -13,15 +11,22 @@ namespace NameSorter.ConsoleUI.Input
         {
             fileName = _fileName;
         }
-
+        
         /// <summary>
-        /// 
+        /// Read all the lines from the file
         /// </summary>
         /// <returns></returns>
         public override string[] ReadNames()
         {
-            string[] names = File.ReadAllLines(fileName);
-            return names;
+            try
+            {
+                string[] names = File.ReadAllLines(fileName);
+                return names;
+            }
+            catch (Exception e)
+            {
+                throw new FileNotFoundException();
+            }
         }
     }
     
