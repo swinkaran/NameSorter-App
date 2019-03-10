@@ -4,7 +4,14 @@ using System.Text;
 
 namespace Swinkaran.NameSorter.ConsoleUI
 {
-    class Helper
+    public static class Helper
     {
+        public static void WriteToConsole(string message = "")
+        {
+            if (message.Length > 0)
+            {
+                Console.WriteLine(message);
+            }
+        }
     }
 }

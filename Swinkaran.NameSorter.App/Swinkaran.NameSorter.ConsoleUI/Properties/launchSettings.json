@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "Swinkaran.NameSorter.ConsoleUI": {
+      "commandName": "Project",
+      "commandLineArgs": "C:\\Users\\Broswebs-Desk\\Documents\\GitHub\\MediatR-Application\\unsorted-names-list.txt"
+    }
+  }
+}
